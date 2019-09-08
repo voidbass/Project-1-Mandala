@@ -1,0 +1,51 @@
+form#example-basic.container.hoc
+  div
+    h3
+    section
+      h1.bold.text-center THÔNG TIN GIỎ HÀNG
+      table.container.text-center.outspace-30(style="margin: 0px auto;")
+        tr.row.p-0(style="margin: 0px auto;")
+          th.col-lg-2 ẢNH
+          th.col-lg-3 TÊN SẢN PHẨM
+          th.col-lg-2 GIÁ
+          th.col-lg-2 SỐ LƯỢNG
+          th.col-lg-2 TỔNG SỐ
+          th.col-lg-1 XÓA
+      table.table__cart.container.text-center
+      table.total__shopping--price.text-center(style="margin: 0px auto;")
+      .row
+        .col-lg-12.topspace-30.cart-button.text-right
+          button.btn.btn-dark.cart-button__2 XÓA TẤT CẢ
+          button.btn.btn-dark.cart-button__3 CẬP NHẬT
+    h3
+    section
+      h1.bold.text-center THÔNG TIN KHÁCH HÀNG
+      .form-group
+        label(for='name') Tên của bạn
+        input#name.form-control.required(type='text', name='name')
+      .form-group
+        label(for='phone') Số điện thoại
+        input#phone.form-control.required(type='text', name='phone')
+      .form-group
+        label(for='address') Địa chỉ
+        input#address.form-control.required(type='text', name='address')
+      .form-group
+        label(for='email') Địa chỉ email
+        input#email.form-control.email.required(type='email', name='email')
+      .form-group
+        label(for='Description') Nội dung
+        textarea#description.form-control(type='text')
+    h3
+    section
+      h1.bold.text-center XEM LẠI THÔNG TIN
+      .Info__Payment__Check
+      table.container.text-center.outspace-30(style="margin: 0px auto;")
+        tr.row.p-0(style="margin: 0px auto;")
+          th.col-lg-2 ẢNH
+          th.col-lg-3 TÊN SẢN PHẨM
+          th.col-lg-2 GIÁ
+          th.col-lg-2 SỐ LƯỢNG
+          th.col-lg-2 TỔNG SỐ
+          th.col-lg-1 XÓA
+      table.table__cart.container.text-center
+      table.total__shopping--price.text-center.container.mb-5(style="margin: 0px auto;")

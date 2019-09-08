@@ -1,0 +1,41 @@
+.hoc.p-0.container
+  .row
+    .col-lg-9.topspace-20
+      h1.outspace-15 TÀI KHOẢN
+      table 
+        tr.text-center
+          th.account--table__space Order
+          th.account--table__space Date
+          th.account--table__space TÌNH TRẠNG THANH TOÁN
+          th.account--table__space TỔNG
+          th.account--table__space NỢ
+        mixin account-table__ct(order, status, debt)
+          tr.text-center
+            td.account--table__space= order
+            td.account--table__space May 13,2013
+            td.account--table__space.color--red= status
+            td.account--table__space 350.000
+              sup đ
+            td.account--table__space= debt
+              sup đ
+        +account-table__ct("#1006", "Đã thanh toán", "0")
+        +account-table__ct("#1006", "Đã thanh toán", "0")
+        +account-table__ct("#1006", "Đã thanh toán", "0")
+        +account-table__ct("#1006", "Thanh toán 50%", "275.000")
+    .col-lg-3.topspace-20
+      h5.outspace-15 CHI TIẾT TÀI KHOẢN
+      hr(style='color:#e7e7e7')
+      ul.pl-0.list-unstyled
+        li.account-info
+          i.fa.fa-user
+          .account-info__sub
+            p.bold.m-0 GiangLe
+            p Leanhgiang89@gmail.com
+        li.account-info.topspace-30
+          i.fa.fa-map-marker
+          .account-info__sub
+            p.m-0 Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình, Hà Nội
+        li.account-info.topspace-30
+          i.fa.fa-phone
+          .account-info__sub
+            p (04) 3786 8904

@@ -1,0 +1,169 @@
+#example-basic {
+  font-family: Material-Design-Iconic-Font;
+
+  section:last-child {
+    h3 {
+      display: none;
+    }
+  }
+
+  .error {
+    color: #c72527;
+  }
+
+}
+
+.wizard > .steps .current-info, .wizard > .steps .number {
+  display: none;
+}
+.wizard > .steps > ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.wizard > .steps > li {
+  a {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e9e0cf;
+    margin-right: 78px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 58px;
+      height: 2px;
+      background: #e9e0cf;
+      position: absolute;
+      right: 22px;
+      top: 5px;
+    }
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: #789629;
+      position: absolute;
+      left: -68px;
+      top: 5px;
+      transition: all 0.6s ease;
+    }
+  }
+  &.first {
+    a {
+      background: #789629;
+    }
+  }
+  &.checked {
+    a {
+      background: #789629;
+      &:after {
+        width: 58px;
+      }
+    }
+  }
+  &:last-child {
+    a {
+      margin-right: 0;
+    }
+  }
+  &:first-child {
+    a {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      
+      a {
+        padding: 0;
+        border: none;
+        display: inline-flex;
+        max-width: 100%;
+        align-items: center;
+        font-family: "Muli-SemiBold";
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 14px;
+          right: 28px;
+          font-family: Material-Design-Iconic-Font;
+        }
+        &:hover{
+          text-decoration: none;
+        };
+      }
+      &:first-child {
+        a {
+          max-width: 100%;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 26px;
+            font-family: Material-Design-Iconic-Font;
+          }
+        }
+      }
+      &:hover {
+          background: #789629;
+        }
+      &:nth-child(2), &:last-child {
+        a {
+          text-align: center;
+        }
+      }
+      &:last-child {
+        a {
+          color: #fff;
+          &:hover {
+            background: #789629;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            right: 28px;
+            font-family: Material-Design-Iconic-Font;
+          }
+        }
+      }
+      &[aria-disabled="true"] {
+        display: none;
+        a {
+          opacity: 0;
+          transition: all 1s;
+        }
+      }
+      &[aria-disabled="false"] {
+        & ~ li {
+          a {
+            color: #fff;
+            &:hover {
+              background: #789629;
+            }
+          }
+        }
+      }
+    }
+  }
+}

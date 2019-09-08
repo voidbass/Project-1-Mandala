@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title Mandala - About Us
+    link(rel='icon' href='images/Madala.ico')
+    link(rel="stylesheet" href="layout/styles/bootstrap/css/bootstrap.min.css")
+    link(href='layout/styles/layout.css', rel='stylesheet', type='text/css')
+  body#top
+    include includes/menu.pug
+    - var namefile = 7;
+    include includes/navigation.pug
+    include includes/about-us-item.pug
+    include includes/footer.pug
+    

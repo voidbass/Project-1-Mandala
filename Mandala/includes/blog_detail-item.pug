@@ -1,0 +1,28 @@
+.col-lg-9
+  img(src='images/4image.png' style='width:100%')
+  p.topspace-30.font-20.bold NÀNG BÉO KHÔNG NGẠI DIỆN VÁY ÁO NỔI BẬT
+  hr
+  p.left
+    | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+  p.left.color--gray.italic Bởi NamTran ( 27 / 05 / 2015 )
+  hr
+  .row.inspace-15.pt-0
+    p.color--gray.col-6.col-lg-6.text-left.p-0
+      | Đọc thêm 
+      i.fa.fa-angle-right(style='border:none;')   
+    p.col-6.col-lg-6.text-right.p-0.color--gray 23 Bình luận
+  p.topspace-20 Tag:
+    b  Men
+  hr
+  h4 ĐÓNG GÓP Ý KIẾN
+        mixin blog__detail-item-input(name,type,height)
+          .row
+            label.inline.bold.topspace-10.col-12.col-lg-1= name
+              | *
+            input.inline.col-12.col-lg-10.topspace-10(type=type style="max-width:95%;margin: 10px 15px 0;"+height )
+  +blog__detail-item-input("Tên","text","height:20px")
+  +blog__detail-item-input("Email","email","height:20px")
+  +blog__detail-item-input("Ý kiến","text","height:130px")
+  .row
+    .col-lg-1
+    button.col-3.col-lg-2.btn.btn-dark.topspace-20.blog__detail-button Gửi ý kiến

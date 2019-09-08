@@ -1,0 +1,12 @@
+extends includes/layout
+
+block content
+    include includes/menu.pug
+    - var namefile = 1;
+    include includes/navigation.pug
+    include includes/gird-banner.pug
+    include includes/gird-all-bg.pug
+block append script
+    script(type="text/javascript" src='layout/js/product.js')
+    script(type="text/javascript" src='layout/js/cart.js')
+    script(type="text/javascript" src='layout/js/shopping__cart.js')

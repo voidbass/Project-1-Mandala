@@ -1,0 +1,19 @@
+include mixin/Blog-mixin.pug
+.hoc.container(style="padding: 0 15px;")
+  .row
+    .col-lg-12.topspace-20
+      h1.outspace-15 BLOG
+      +blog-direct-icon
+      ul.list-unstyled.row
+        +blog-item('blog__item1','background-image: url(images/1image.png)')
+        +blog-item('blog__item1','background-image: url(images/2image.png)')
+        +blog-item('blog__item1','background-image: url(images/3image.png)')
+      ul.list-unstyled.row.clear
+        +blog-item('blog__item1','background-image: url(images/4image.png)')
+        +blog-item('blog__item1','background-image: url(images/5image.png)')
+        +blog-item('blog__item1','background-image: url(images/6image.png)')
+      ul.list-unstyled.row.clear
+        +blog-item('blog__item1','background-image: url(images/7image.png)')
+        +blog-item('blog__item1','background-image: url(images/8image.png)')
+        +blog-item('blog__item1','background-image: url(images/9image.png)')
+      +blog-direct-icon

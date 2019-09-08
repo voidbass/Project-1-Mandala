@@ -1,0 +1,81 @@
+.arrow-box{
+    position        : relative;
+    display         : block;
+    float           : left;
+    margin          : 0 8px 0 8px;
+    padding         : 0 7px;
+    height          : 24px;
+    line-height     : 24px;
+    border          : 1px solid #aeaeae;
+    border-radius   : 2px;
+    background-color: #fff;
+    font-family     : Arial, Helvetica, sans-serif;
+    font-size       : 11px;
+    font-weight     : bold;
+    color           : #555;
+    cursor          : default;
+}
+.arrow-box:before{
+    top          : 5px;
+    left         : -6px;
+    border-top   : 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right : 6px solid #aeaeae;
+    content      : "";
+    position     : absolute;
+    display      : block;
+    height       : 0;
+    width        : 0;
+}
+.arrow-box:after{
+    top          : 6px;
+    left         : -5px;
+    border-top   : 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right : 5px solid #fff;
+    content      : "";
+    position     : absolute;
+    display      : block;
+    height       : 0;
+    width        : 0;
+}
+%btn-media{
+    float      : left;
+    height     : 24px;
+    line-height: 24px;
+    padding    : 0 7px;
+}
+.btnface{
+    background-color: #3b5998;
+    color           : white;
+    border          : none;
+    text-shadow     : 1px 1px 0 #1b2947;
+    @extend %btn-media;
+}
+
+.btntwitter{
+    @extend %btn-media;
+    color: #00acee;
+}
+.btngplus{
+    @extend %btn-media;
+}
+.btnlinkedin{
+    @extend %btn-media;
+    background-color: #0077b5;
+}
+.btnpinterest{
+    @extend %btn-media;
+}
+.detail-item__img1{
+    margin-top: 50px;
+}
+.detail-item__img2{
+    height: 35em;
+}
+.detail-spec__feature__left__order1{
+    order: 1;
+}
+.detail-spec__feature__left__order2{
+    order: 2;
+}

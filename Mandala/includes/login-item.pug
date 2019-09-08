@@ -1,0 +1,15 @@
+.hoc.p-0
+    .topspace-20
+      h1.bold.outspace-15.inline ĐĂNG NHẬP
+      button.btn.btn-dark.uppercase.inline.float-right Đăng ký
+      form.p-5(style="background-color: #d9d9d9")
+        h4.bold KHÁCH HÀNG ĐĂNG KÝ
+        p.bold.outspace-30 Nếu bạn có 1 tài khoản, xin vui lòng đăng nhập
+        mixin login-input(name,type)
+          label.bold.topspace-10= name
+            | *
+          input(type=type style="width:100%")
+        +login-input("Địa chỉ email","email")
+        +login-input("Xác nhận mật khẩu","password")
+        p.bold.topspace-20.inline Quên Mật Khẩu?
+        button.btn.btn-dark.uppercase.inline.ml-4 Đăng nhập

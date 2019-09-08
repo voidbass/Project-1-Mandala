@@ -1,0 +1,19 @@
+mixin info-item1__col6__img(img,class1,class3)
+  .col-6.col-lg-6(class=class3)
+    div(style=img class=class1)
+      if block
+        block
+mixin info-item2__col6__color(color,class2,class4,content,srcimg,ct__color)
+  .col-6.col-lg-6(class=class4)
+    div(style=color class=class2)
+      if block
+        block
+      p.center.bold.font-20.inspace-80(style=ct__color)= content
+        br
+        img(src=srcimg)
+
+mixin info-item1__col6(img,class1,class2)
+  .col-lg-6.col-md-6.col-12(class=class2)
+    div(style=img class=class1)
+      if block
+        block

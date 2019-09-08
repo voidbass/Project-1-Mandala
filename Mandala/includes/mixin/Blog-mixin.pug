@@ -1,0 +1,36 @@
+mixin blog-direct-icon
+  .outspace-29.col-lg-12.pl-0.pr-0
+        h6.float-left 
+          i.fa.fa-th-large.pr-1
+          |  
+          i.fa.fa-list-ul.pl-1.pr-1
+        h6.float-right
+          i.fa.fa-caret-left
+          b.pl-1.pr-1  1  
+          p.pl-1.pr-1.inline  2   
+          p.pl-1.pr-1.inline  3   
+          i.fa.fa-caret-right.pl-1.pr-1
+  hr
+mixin blog-item(index,img)
+  li.col-sm-4.col-md-4.col-lg-4.col-xl-4.center
+    div(class=index style=img)
+      .blog__item
+      .blog__item__arrow
+    p.left.footer-ct2.uppercase Review son kem Bourjois Velvet
+    hr
+    p.left
+     | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+    p.left.color--gray.italic Bởi NamTran ( 27 / 05 / 2015 )
+    hr
+    .row.inspace-15.pt-0
+      p.color--gray.col-lg-6.col-6.col-md-6.text-left.float-left.p-0
+        | Đọc thêm 
+        i.fa.fa-angle-right(style='border:none;')   
+      p.col-lg-6.col-md-6.col-6.float-right.text-right.p-0.color--gray 23 Bình luận
+mixin blog__detail-list-item(img)
+  img(src=img style="height:50px").col-lg-5.pr-0.topspace-25
+  .col-lg-7.pl-2.topspace-10
+    div.p-0
+      b.mb-0.inline.font-x3 11
+      .inline.font-x1.bold / tháng 5
+    p.italic(style='font-size:8px') Đăng bởi Giangle

@@ -1,0 +1,34 @@
+.hoc.no-hoc.p-0
+  h1.outspace-20 GIỎ HÀNG
+  table.container.text-center.outspace-30(style="margin: 0px auto;")
+    tr.row.p-0(style="margin: 0px auto;")
+      th.col-lg-2 ẢNH
+      th.col-lg-3 TÊN SẢN PHẨM
+      th.col-lg-2 GIÁ
+      th.col-lg-2 SỐ LƯỢNG
+      th.col-lg-2 TỔNG SỐ
+      th.col-lg-1 XÓA
+  table.table__cart.container.text-center
+  table.total__shopping--price.text-center(style="margin: 0px auto;")
+    mixin Cart-table__item(img,index,index2)
+      tr.row.p-0(style="margin: 0px auto;")
+        td.cart--table__space.col-lg-2
+          img(src=img)
+        td.cart--table__space.col-lg-3 Lắc tay D&G
+        td.cart--table__space.col-lg-2.bold= index
+          | .000
+          sup đ
+        td.cart--table__space.col-lg-2= index2
+        td.cart--table__space.col-lg-2.bold= index*index2
+          | .000
+          sup đ
+        td.cart--table__space.col-lg-1
+          a(href='#')
+            i.fa.fa-trash-o
+.container.hoc.p-0
+  .row
+    .col-lg-12.topspace-30.cart-button.text-right
+      button.btn.btn-dark.cart-button__buy TIẾP TỤC MUA HÀNG
+      button.btn.btn-dark.cart-button__2 XÓA TẤT CẢ
+      button.btn.btn-dark.cart-button__3 CẬP NHẬT
+      button.btn.btn-dark.cart-button__4 THANH TOÁN

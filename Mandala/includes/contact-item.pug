@@ -1,0 +1,16 @@
+.hoc.p-0.container
+    .topspace-20.row
+      h1.bold.outspace-15.col-lg-12 LIÊN HỆ
+      .col-lg-6
+        img(src='images/maps.png')
+      .col-lg-6.pl-1
+        h4 GỬI EMAIL CHO CHÚNG TÔI
+        mixin contact-input(name,type,height)
+          .row
+            label.pr-0.inline.bold.topspace-10.col-lg-2= name
+              | *
+            input.pr-0.inline.col-lg-9.topspace-10(type=type style="width:95%;"+height )
+        +contact-input("Tên","text","height:20px")
+        +contact-input("Email","email","height:20px")
+        +contact-input("Tin nhắn","text","height:115px")
+        button.btn.btn-dark.float-right.topspace-20(style="margin-right: 25px") Gửi

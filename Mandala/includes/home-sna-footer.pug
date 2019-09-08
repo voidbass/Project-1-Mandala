@@ -1,0 +1,50 @@
+//- Home Footer 
+aside.hoc.topspace-40.outspace-30.container
+      ul.row.list-unstyled.outspace-30
+        - var list = ['fa-facebook','FACEBOOK', 'fa-twitter','TWITTER', 'fa-instagram','INSTAGRAM', 'fa-google-plus','GOOGLE', 'fa-pinterest','PINTEREST', 'fa-linkedin','LINKEDIN'];
+          each item,i in list
+            if ((i&1) == 0)
+              li.col-6.col-md-3.col-lg-2.text-center(class=list[i+1])
+                i(class=item class="fa")
+                p.inline.bold= list[i+1]
+      ul.row.list-unstyled
+        li.col-sm-4.col-md-6.col-lg-4.col-xl-4
+          p.bold.center VỀ CHÚNG TÔI
+          pre.center(style='color:gray;font-style:italic') <s>              </s>///////////<s>              </s>
+          img.footer-ct1(src='images/logo.png')
+          p.left.bold.uppercase Giới thiệu chung về mỹ phẩm Handmade Mandala
+          p.left.fontstylenone
+            | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+          p.left.color--gray Xem thêm
+        li.col-sm-4.col-md-6.col-lg-4.col-xl-4.center
+          p.bold BLOG
+          pre(style='color:gray;font-style:italic') <s>              </s>///////////<s>              </s>
+          img(src='images/2image.png')
+          p.left.footer-ct2.uppercase Review son kem Bourjois Velvet
+          hr
+          p.left
+            | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+          p.left.color--gray.italic Bởi NamTran ( 27 / 05 / 2015 )
+          hr
+          .row.inspace-15.pt-0
+            p.color--gray.col-lg-6.col-6.col-md-6.text-left.p-0
+              | Đọc thêm 
+              i.fa.fa-angle-right(style='border:none;')   
+            p.col-lg-6.col-md-6.col-6.text-right.p-0.color--gray 23 Bình luận
+        li.col-sm-4.col-md-12.col-lg-4.col-xl-4.row.pr-0.pl-0.ml-2
+          .col-md-6.col-lg-12
+            p.bold.center GỬI EMAIL CHO CHÚNG TÔI
+            pre.center(style='color:gray;font-style:italic') <s>              </s>///////////<s>              </s>
+            input.form-control(type='text', placeholder='Email của bạn')
+            br
+            p.fontstylenone.center Gửi email để nhận những ưu đãi mới nhất
+            button.btn.btn-dark.btnct(type="button" data-toggle="modal" data-target=".modal-home") Gửi
+            br
+            br
+          .col-md-6.col-lg-12.pb-0
+            p.bold.center TAG SẢN PHẨM
+            pre.center(style='color:gray;font-style:italic') <s>              </s>///////////<s>              </s>
+            - var list = ["Đồng hồ", "Túi", "Phụ kiện", "Đồng hồ", "Túi", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Giày", "Sandal", "Trẻ em", "Thời trang nữ", "Trẻ em", "Thời trang nữ"];
+              each item in list
+                button.btn.btnsp.left= item
+include footer.pug

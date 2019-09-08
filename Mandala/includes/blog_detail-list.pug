@@ -1,0 +1,15 @@
+.col.col-lg-3.clear
+  h5.topspace-30.font-15.bold BÀI VIẾT MỚI NHẤT
+  hr
+  .row
+    +blog__detail-list-item('images/2image.png')
+    +blog__detail-list-item('images/3image.png')
+    +blog__detail-list-item('images/4image.png')
+  h5.topspace-30.font-15.bold BLOG TAGS
+    hr
+    - var li = ["Đồng hồ", "Túi", "Phụ kiện", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Trẻ em", "Thời trang nữ"]
+    each item in li
+      button.btn.btnsp.left= item
+  h5.topspace-30.font-15.bold LATEST VIDEO
+  hr
+  img(src='images/Blog_detail.png')

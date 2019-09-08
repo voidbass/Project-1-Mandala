@@ -1,0 +1,31 @@
+//- Detail info
+include mixin/Detail-mixin.pug
+.container.hoc.topspace-40
+  .row
+    .col-lg-9
+      ul.bold.inline.p-0.m-0.font-15
+        li.pr-4 ĐẶC ĐIỂM NỔI BẬT
+        li.pr-4.color--gray THÔNG TIN SẢN PHẨM
+        li.p-2.color--gray ĐÁNH GIÁ
+      hr.hrblock
+      +detail-spec__feature__left('images/vong1.png','detail-spec__feature__left__order1','detail-spec__feature__left__order2')
+      +detail-spec__feature__right('images/vong2.png')
+      +detail-spec__feature__left('images/vong3.png','detail-spec__feature__left__order1','detail-spec__feature__left__order2')
+      +detail-spec__feature__right('images/vong4.png')
+    .col-lg-3.d-none.d-lg-block
+      p.bold.pt-3.pl-0.m-0.font-15 SẢN PHẨM BÁN CHẠY
+      hr.hrblock
+      .row
+        - for (var n=0; n < 2; n++)
+            +detail-item__small
+        case x = 3
+          when 3
+            +detail-item__small__last-child
+      p.bold.pt-3.pl-0.m-0.font-15.pt-5 SẢN PHẨM MUA NHIỀU
+      hr.hrblock
+      .row
+        - for (var n=0; n < 3; n++)
+            +detail-item__small
+        case x = 4
+          when 4
+            +detail-item__small__last-child

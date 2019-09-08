@@ -1,0 +1,58 @@
+//- Info of page 
+include mixin/Home-mixin.pug
+mainav.hoc.outspace-5.container
+      ul.outspace-20.topspace-20.center.nopdstart.row
+        li.inline.col-sm-12.col-md-12.col-lg-4
+          i.fa.fa-plane.center.font-20
+          br
+          p Miễn phí vận chuyển
+        li.inline.border-left.col-sm-12.col-md-12.col-lg-4
+          i.fa.fa-gift.center.font-20
+          br
+          p Nhận ngay quà tặng trị giá 350.000đ
+        li.inline.border-left.col-sm-12.col-md-12.col-lg-4
+          i.fa.fa-star.center.font-20
+          br
+          p Giảm 30% cho đơn hàng trên 5.000.000đ
+      .row.outspace-10
+        .col-lg-6.row.col-md-6.col-12
+          +info-item1__col6__img('background-image: url("images/home1.png")',"info1","info1__fixsize")
+          .arrow1
+          +info-item2__col6__color('background-color: #e3ce33',"info2","info2__fixsize","SỮA TẮM",'images/gachduoitrang.png',"color:white")
+          
+          +info-item2__col6__color("background-color: #cbd3df","info4","info4__fixsize","NƯỚC HOA",'images/gachduoiden.png')
+          +info-item1__col6__img("background-image: url('images/home2.png')","info5","info5__fixsize")
+            p.bold.under.infoct5-1 Từ 1/6 - 5/6/2015
+              pre.font-50.infoct5-2.bold -40
+                sup %
+              pre.infoct5-3.under.bold Mua hàng
+          .arrow2
+        +info-item1__col6('background-image: url("images/home3.png")',"info3","info3__fixsize")
+          p.infoct3-1.roboto.font-15(style='color: #c59451') CORINNE2015
+      .row
+        +info-item1__col6('background-image: url("images/home4.png")',"info6","info6__fixsize")
+        p.infoct6-1.roboto.font-20 COMBO TẮM TRẮNG
+          pre.UTM.infoct6-2.font-50 Tai Nhà
+        .col-lg-6.row.col-md-6.col-12(style="padding:0")
+          +info-item2__col6__color("background-color: #88d8da","info7","info7__fixsize","TRANG SỨC",'images/gachduoiden.png')
+          +info-item1__col6__img("background-image: url('images/home5.png')","info8","info8__fixsize")
+          .arrow3
+          +info-item1__col6__img('background-image: url("images/home6.png")',"info9","info9__fixsize")
+          +info-item2__col6__color("background-color: #f49ac2","info10","info10__fixsize")
+            div
+              img.infoct9-1(src='images/info9.png')
+              img.infoct9-2(src='images/info9-2.png')
+          .arrow4
+      .topspace-30.pb-6
+        .row.pb-5.mb-2
+          img.info10-1.circle.col-sm-2.col-md-2.col-lg-2.col-xl-2(src='images/7image.png')
+          .col-md-9.col-lg-6.col-xl-6.info10-2
+            p "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kì lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto"
+            p.info10-4.left TUTILE
+              em.color--gray.info10-4--ct.mb-4 _ Giám đốc phát triển sản phẩm           
+          .info10-5
+            i.fa.fa-square  
+            i.fa.fa-square.color--gray  
+            i.fa.fa-square
+          img.fl_right.info10-3.col-sm-4.col-md-4.col-lg-4.col-xl-4(src='images/Home8.png')
+//- End info page 

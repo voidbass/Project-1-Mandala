@@ -1,0 +1,23 @@
+.hoc.p-0
+    .topspace-20
+      h1.bold.outspace-15 ĐĂNG KÝ
+      form.p-5(style="background-color: #d9d9d9")
+        h4.bold THÔNG TIN CÁ NHÂN
+        mixin register-input(name,type)
+          label.bold.topspace-10= name
+            | *
+          input(type=type style="width:100%")
+        +register-input("Tên trước","text")
+        +register-input("Tên sau","text")
+        +register-input("Email","email")
+        +register-input("Password","password")
+        input.inline(type='checkbox') 
+        p.topspace-10.inline.bold Đăng ký nhận bản tin
+        h4.bold.topspace-30 THÔNG TIN ĐĂNG NHẬP
+        +register-input("Mật khẩu","password")
+        +register-input("Xác nhận mật khẩu","password")
+        br
+        button.btn.btn-dark Gửi
+        button.btn.btn-dark.float-right
+          i.fa.fa-undo
+          |  Quay lại

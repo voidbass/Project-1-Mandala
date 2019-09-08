@@ -1,0 +1,15 @@
+# Don't track content of these folders
+# Untracked files:
+# ignore generated html,css files,
+Mandala/images
+Mandala/images/
+Mandala/layout/styles/.sass-cache
+Mandala/layout/styles/.sass-cache/
+.sass-cache/
+*.html
+*.css
+*.scssc
+*.css.map
+*.sass.map
+*.scss.map
+

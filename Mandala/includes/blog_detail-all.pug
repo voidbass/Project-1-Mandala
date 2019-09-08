@@ -1,0 +1,8 @@
+include mixin/Blog-mixin.pug
+.hoc.container
+  .row
+    .col-lg-12.topspace-20
+      h1.outspace-15 BLOG
+      .row
+        include blog_detail-list.pug
+        include blog_detail-item.pug

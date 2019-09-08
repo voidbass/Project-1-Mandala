@@ -1,0 +1,52 @@
+.hoc.pl-0.pr-0
+  mixin menu-head__nav2(nav1,nav2)
+    ul.inline.mt-3.ml-0.col
+      li
+        a(href='#')= nav1
+      li.active  >  
+        a.active(href='#')= nav2
+    hr(style="width:97%")
+
+  mixin menu-head__nav3(nav1,nav2,nav3)
+    ul.inline.mt-3.ml-0.col
+      li
+        a(href='#')= nav1
+      li  >  
+        a(href='#')= nav2
+      li.active  >  
+        a.active(href='#')= nav3
+    hr(style="width:97%")
+
+  mixin menu-head__nav4(nav1,nav2,nav3,nav4)
+    ul.inline.mt-3.ml-0.col
+      li
+        a(href='#')= nav1
+      li  >  
+        a(href='#')= nav2
+      li  >  
+        a(href='#')= nav3
+      li.active  >  
+        a.active(href='#')= nav4
+    hr(style="width:97%")
+    
+  case namefile
+    when 0
+      +menu-head__nav4('Home','Sản phẩm','Trang sức','Lắc tay')
+    when 1
+      +menu-head__nav3('Home','Sản phẩm','Trang sức')
+    when 2
+      +menu-head__nav2('Home','Trang sức')
+    when 3
+      +menu-head__nav3('Home','Sản phẩm','Trang sức')
+    when 4
+      +menu-head__nav2('Home','Tài khoản')
+    when 5
+      +menu-head__nav2('Home','Đăng ký')
+    when 6
+      +menu-head__nav2('Home','Đăng nhập')
+    when 7
+      +menu-head__nav2('Home','Về chúng tôi')
+    when 8
+      +menu-head__nav2('Home','Liên hệ')
+    when 9
+      +menu-head__nav2('Home','Blog')
